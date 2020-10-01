@@ -1,0 +1,10 @@
+<section class="col-12">
+  <h2>Photos</h2>
+  <cdk-virtual-scroll-viewport [itemSize]="12" class="example-viewport">
+    <div class="d-flex flex-row flex-wrap justify-content-around">
+      <div class="photo-cards" *cdkVirtualFor="let photo of photos">
+        <app-photo-detail [photo]="photo"></app-photo-detail>
+      </div>
+    </div>
+  </cdk-virtual-scroll-viewport>
+</section>

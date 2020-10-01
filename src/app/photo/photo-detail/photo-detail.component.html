@@ -1,0 +1,11 @@
+<div class="photo-cards__item">
+  <div class="card mr-5 mt-5">
+    <img [src]="photo.url | safeurl" />
+    <div class="card-body">
+      <strong class="card-title">{{ photo.title }}</strong>
+      <p class="card-text">
+        <i>From Album: {{ photo.albumId }}</i>
+      </p>
+    </div>
+  </div>
+</div>
